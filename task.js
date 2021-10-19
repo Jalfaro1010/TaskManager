@@ -9,12 +9,34 @@ What would you like to do (Please enter one of the options below):
 "CLOSE" - Close The Task Manager
 `;
 
+// Storing tasks using an Array
+const tasks = [
+`Charge Macbook`,
+`Master JavaScript`
+];
+
+// To use for displaying tasks to the User
+let showTasks = ``;
+
 // Displays Menu For User
 let userInput = prompt(menu);
 
 // Continues to display the menu until User closes Task Manager program (Loops)
  while (userInput !== `CLOSE`){
-// OTHER OPTIONS
+
+// Checks if user enters TASKS
+if (userInput === `TASKS`){
+
+    //
+    for (task of tasks){
+
+        // Using \n to create a new line break after each task
+        showTasks += `${task}\n`;
+        
+    }
+    // 
+    alert(showTasks);
+}
 
 
 // Displays menu for User again
