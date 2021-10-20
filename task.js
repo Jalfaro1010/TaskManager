@@ -34,9 +34,24 @@ if (userInput === `TASKS`){
         showTasks += `${task}\n`;
         
     }
-    // 
+    // Displays the current tasks for the User
     alert(showTasks);
-}
+
+    // Sets the value of showTasks string variable back to an empty string
+    showTasks = "";
+    }
+// Checks if the input is "NEW"
+    if (userInput === `NEW`){
+
+        // Prompts user to enter a new task
+newTask = prompt(`Please enter the new task:`);
+
+// Alerts the User that the new task has been added
+alert(`"${newTask}" has been added!`);
+
+// Adds the User's entry as a new item at the end of the tasks array
+tasks.push(newTask);
+    }
 
 
 // Displays menu for User again
